@@ -1,5 +1,8 @@
 <script setup>
 import UserDropdown from '../Dropdown/UserDropdown.vue'
+import { useAuthStore } from '../../stores/auth.store'
+
+const authStore = useAuthStore()
 </script>
 
 <template>
@@ -15,7 +18,7 @@ import UserDropdown from '../Dropdown/UserDropdown.vue'
 				class="hidden text-sm font-semibold uppercase text-white lg:inline-block"
 				href="javascript:void(0)"
 			>
-				Dashboard
+				Welcome, {{ authStore.user }}
 			</a>
 			<!-- Form -->
 			<form

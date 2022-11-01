@@ -7,7 +7,7 @@ defineProps({
 </script>
 
 <template>
-	<div class="mt-2 text-sm text-red-600">
+	<div class="mx-1 my-1 text-sm font-semibold tracking-wide text-red-600">
 		{{ messages }}
 	</div>
 </template>

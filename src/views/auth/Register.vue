@@ -3,37 +3,26 @@ import Label from '../../components/Form/Label'
 import Input from '../../components/Form/Input.vue'
 import Button from '../../components/Form/Button.vue'
 import InputError from '../../components/Form/InputError.vue'
-import FormError from '../../components/Form/FormError.vue'
 
-import { reactive, ref } from 'vue'
-import { useRouter } from 'vue-router'
-import axios from 'axios'
+import { Form, Field } from 'vee-validate'
+import { useAuthStore } from '../../stores/auth.store'
+import * as Yup from 'yup'
 
-const state = reactive({
-	form: { name: '', email: '', password: '' },
-	loading: false,
+const schema = Yup.object().shape({
+	name: Yup.string().required('Name is required'),
+	email: Yup.string()
+		.email('Email is not valid')
+		.required('Email is required'),
+	password: Yup.string().required('Password is required'),
 })
 
-const router = useRouter()
-let errors = ref('')
-let statusCode = ref(0)
+function onSubmit(values, { setErrors }) {
+	const authStore = useAuthStore()
+	const { name, email, password } = values
 
-const register = async () => {
-	state.loading = true
-	axios.get('/sanctum/csrf-cookie').then(() => {
-		axios
-			.post('/api/auth/register', state.form)
-			.then((response) => {
-				router.push({ name: 'Login' })
-			})
-			.catch((error) => {
-				statusCode.value = error.response.status
-				errors.value = error.response.data.errors
-			})
-			.finally(() => {
-				state.loading = false
-			})
-	})
+	return authStore
+		.register(name, email, password)
+		.catch((error) => console.log(error))
 }
 </script>
 
@@ -52,46 +41,55 @@ const register = async () => {
 						</div>
 					</div>
 					<div class="flex-auto px-4 py-10 pt-0 lg:px-10">
-						<form @submit.prevent="register">
+						<Form
+							@submit="onSubmit"
+							:validation-schema="schema"
+							v-slot="{ errors, isSubmitting }"
+						>
 							<div class="relative mb-3 w-full">
 								<Label htmlFor="name">Name</Label>
-								<Input
-									id="name"
+								<Field
+									name="name"
+									type="text"
+									class="relative w-full rounded border border-slate-300 bg-white px-3 py-3 text-sm text-slate-600 placeholder-slate-300 outline-none focus:outline-none focus:ring"
 									placeholder="Name"
-									autofocus
-									v-model="state.form.name"
+									required
 								/>
 								<InputError
 									v-if="errors.name"
-									:messages="errors.name[0]"
+									:messages="errors.name"
 								/>
 							</div>
 
 							<div class="relative mb-3 w-full">
 								<Label htmlFor="email">Email</Label>
-								<Input
-									id="email"
+								<Field
+									name="email"
 									type="email"
+									class="relative w-full rounded border border-slate-300 bg-white px-3 py-3 text-sm text-slate-600 placeholder-slate-300 outline-none focus:outline-none focus:ring"
 									placeholder="Email"
-									v-model="state.form.email"
+									autocomplete="email"
+									required
 								/>
 								<InputError
 									v-if="errors.email"
-									:messages="errors.email[0]"
+									:messages="errors.email"
 								/>
 							</div>
 
 							<div class="relative mb-3 w-full">
 								<Label htmlFor="password">Password</Label>
-								<Input
-									id="password"
+								<Field
+									name="password"
 									type="password"
+									class="relative w-full rounded border border-slate-300 bg-white px-3 py-3 text-sm text-slate-600 placeholder-slate-300 outline-none focus:outline-none focus:ring"
 									placeholder="Password"
-									v-model="state.form.password"
+									autocomplete="current-password"
+									required
 								/>
 								<InputError
 									v-if="errors.password"
-									:messages="errors.password[0]"
+									:messages="errors.password"
 								/>
 							</div>
 
@@ -122,24 +120,24 @@ const register = async () => {
 								<Button
 									type="submit"
 									:class="{
-										'opacity-50': state.loading,
+										'opacity-50': isSubmitting,
 									}"
-									:disabled="state.loading"
+									:disabled="isSubmitting"
 								>
 									{{
-										state.loading
+										isSubmitting
 											? 'Loading...'
 											: 'Create Account'
 									}}
 								</Button>
 							</div>
-						</form>
+						</Form>
 						<div>
 							<p class="mt-4 text-center text-sm text-slate-500">
 								Already have an account?
 								<router-link
 									class="font-bold text-slate-600 hover:text-slate-700"
-									:to="{ name: 'Login' }"
+									:to="{ name: 'login' }"
 								>
 									Sign in
 								</router-link>

@@ -5,37 +5,24 @@ import Button from '../../components/Form/Button.vue'
 import InputError from '../../components/Form/InputError.vue'
 import FormError from '../../components/Form/FormError.vue'
 
-import { reactive, ref } from 'vue'
-import { useRouter } from 'vue-router'
-import axios from 'axios'
+import { Form, Field } from 'vee-validate'
+import { useAuthStore } from '../../stores/auth.store'
+import * as Yup from 'yup'
 
-const router = useRouter()
-const state = reactive({
-	form: { email: '', password: '' },
-	loading: false,
+const schema = Yup.object().shape({
+	email: Yup.string()
+		.email('Email is not valid')
+		.required('Email is required'),
+	password: Yup.string().required('Password is required'),
 })
 
-let errors = ref('')
-let statusCode = ref(0)
+function onSubmit(values, { setErrors }) {
+	const authStore = useAuthStore()
+	const { email, password } = values
 
-const login = async () => {
-	state.loading = true
-	axios.get('/sanctum/csrf-cookie').then(() => {
-		axios
-			.post('/api/auth/login', state.form)
-			.then((response) => {
-				router.push({ name: 'Dashboard' })
-			})
-			.catch((error) => {
-				statusCode.value = error.response.status
-				statusCode.value == 422
-					? (errors.value = error.response.data.errors)
-					: (errors.value = error.response.data.message)
-			})
-			.finally(() => {
-				state.loading = false
-			})
-	})
+	return authStore
+		.login(email, password)
+		.catch((error) => setErrors({ message: error }))
 }
 </script>
 
@@ -54,37 +41,44 @@ const login = async () => {
 						</div>
 					</div>
 					<div class="flex-auto px-4 py-10 pt-0 lg:px-10">
-						<FormError
-							v-if="errors && statusCode != 422"
-							:error="errors"
-						/>
-						<form @submit.prevent="login">
+						<Form
+							@submit="onSubmit"
+							:validation-schema="schema"
+							v-slot="{ errors, isSubmitting }"
+						>
+							<FormError
+								v-if="errors.message"
+								:error="errors.message"
+							/>
 							<div class="relative mb-3 w-full">
 								<Label htmlFor="email">Email</Label>
-								<Input
-									id="email"
-									type="text"
+								<Field
+									name="email"
+									type="email"
+									class="relative w-full rounded border border-slate-300 bg-white px-3 py-3 text-sm text-slate-600 placeholder-slate-300 outline-none focus:outline-none focus:ring"
 									placeholder="Email"
-									v-model="state.form.email"
-									autofocus
+									autocomplete="email"
+									required
 								/>
 								<InputError
 									v-if="errors.email"
-									:messages="errors.email[0]"
+									:messages="errors.email"
 								/>
 							</div>
 
 							<div class="relative mb-3 w-full">
 								<Label htmlFor="password">Password</Label>
-								<Input
-									id="password"
+								<Field
+									name="password"
 									type="password"
+									class="relative w-full rounded border border-slate-300 bg-white px-3 py-3 text-sm text-slate-600 placeholder-slate-300 outline-none focus:outline-none focus:ring"
 									placeholder="Password"
-									v-model="state.form.password"
+									autocomplete="current-password"
+									required
 								/>
 								<InputError
 									v-if="errors.password"
-									:messages="errors.password[0]"
+									:messages="errors.password"
 								/>
 							</div>
 
@@ -92,22 +86,22 @@ const login = async () => {
 								<Button
 									type="submit"
 									:class="{
-										'opacity-50': state.loading,
+										'opacity-50': isSubmitting,
 									}"
-									:disabled="state.loading"
+									:disabled="isSubmitting"
 								>
 									{{
-										state.loading ? 'Loading...' : 'Sign in'
+										isSubmitting ? 'Loading...' : 'Sign in'
 									}}
 								</Button>
 							</div>
-						</form>
+						</Form>
 						<div>
 							<p class="mt-4 text-center text-sm text-slate-500">
 								Don't have an account?
 								<router-link
 									class="font-bold text-slate-600 hover:text-slate-700"
-									:to="{ name: 'Register' }"
+									:to="{ name: 'register' }"
 								>
 									Sign Up
 								</router-link>

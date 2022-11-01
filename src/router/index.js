@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import { useAuthStore } from '../stores/auth.store'
 
 // * layouts
 import Auth from '../layout/Auth.vue'
@@ -10,41 +11,55 @@ import Index from '../views/Index.vue'
 // auth
 import Login from '../views/auth/Login.vue'
 import Register from '../views/auth/Register.vue'
+import Logout from '../views/auth/Logout.vue'
 
 /* admin */
 import Dashboard from '../views/admin/Dashboard.vue'
 
+const redirectToHomeOnLoggedIn = (to, from, next) => {
+	if (useAuthStore().loggedIn) next({ name: 'dashboard' })
+	else next()
+}
+
 const routes = [
 	{
 		path: '/',
-		name: 'MainPage',
+		name: 'main',
 		component: Index,
 	},
 	{
 		path: '/auth',
 		redirect: '/auth/login',
 		component: Auth,
+		beforeEnter: redirectToHomeOnLoggedIn,
 		children: [
 			{
 				path: '/auth/login',
-				name: 'Login',
+				name: 'login',
 				component: Login,
 			},
 			{
 				path: '/auth/register',
-				name: 'Register',
+				name: 'register',
 				component: Register,
+			},
+			{
+				path: '/auth/logout',
+				name: 'logout',
+				component: Logout,
+				meta: { requireAuth: true },
 			},
 		],
 	},
 	{
 		path: '/admin',
-		name: 'Admin',
+		name: 'admin',
 		component: Admin,
+		meta: { requireAuth: true },
 		children: [
 			{
 				path: '/admin/dashboard',
-				name: 'Dashboard',
+				name: 'dashboard',
 				component: Dashboard,
 			},
 		],
@@ -57,10 +72,9 @@ const router = createRouter({
 	routes,
 })
 
-router.afterEach((to, from) => {
-	const toDepth = to.path.split('/').length
-	const fromDepth = from.path.split('/').length
-	to.meta.transitionName = toDepth < fromDepth ? 'slide-right' : 'slide-left'
+router.beforeEach((to, from, next) => {
+	if (to.meta.requireAuth && !useAuthStore().loggedIn) next({ name: 'login' })
+	else next()
 })
 
 export default router

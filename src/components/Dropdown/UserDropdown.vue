@@ -42,12 +42,10 @@ const toggleDropdown = (event) => {
 				block: dropdownPopoverShow,
 			}"
 		>
-			<a
-				href="javascript:void(0);"
+			<span
 				class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-slate-700"
 			>
-				Action
-			</a>
+			</span>
 			<a
 				href="javascript:void(0);"
 				class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-slate-700"
@@ -61,12 +59,12 @@ const toggleDropdown = (event) => {
 				Something else here
 			</a>
 			<div class="my-2 h-0 border border-solid border-slate-100" />
-			<a
-				href="javascript:void(0);"
+			<router-link
 				class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-slate-700"
+				:to="{ name: 'logout' }"
 			>
-				Seprated link
-			</a>
+				Logout
+			</router-link>
 		</div>
 	</div>
 </template>
