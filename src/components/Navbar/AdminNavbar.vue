@@ -18,12 +18,10 @@ const authStore = useAuthStore()
 				class="hidden text-sm font-semibold uppercase text-white lg:inline-block"
 				href="javascript:void(0)"
 			>
-				Welcome, {{ authStore.user }}
+				Dashboard
 			</a>
 			<!-- Form -->
-			<form
-				class="mr-3 hidden flex-row flex-wrap items-center md:flex lg:ml-auto"
-			>
+			<form class="mr-3 hidden flex-row flex-wrap items-center md:flex lg:ml-auto">
 				<div class="relative flex w-full flex-wrap items-stretch">
 					<span
 						class="absolute z-10 h-full w-8 items-center justify-center rounded bg-transparent py-3 pl-3 text-center text-base font-normal leading-snug text-slate-300"
@@ -38,9 +36,7 @@ const authStore = useAuthStore()
 				</div>
 			</form>
 			<!-- User -->
-			<ul
-				class="hidden list-none flex-col items-center md:flex md:flex-row"
-			>
+			<ul class="hidden list-none flex-col items-center md:flex md:flex-row">
 				<UserDropdown />
 			</ul>
 		</div>

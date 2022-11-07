@@ -10,9 +10,7 @@ import { useAuthStore } from '../../stores/auth.store'
 import * as Yup from 'yup'
 
 const schema = Yup.object().shape({
-	email: Yup.string()
-		.email('Email is not valid')
-		.required('Email is required'),
+	email: Yup.string().email('Email is not valid').required('Email is required'),
 	password: Yup.string().required('Password is required'),
 })
 
@@ -35,9 +33,7 @@ function onSubmit(values, { setErrors }) {
 				>
 					<div class="mb-0 rounded-t px-6 py-6">
 						<div class="text-center">
-							<h6 class="text-lg font-bold text-slate-500">
-								Sign in
-							</h6>
+							<h6 class="text-lg font-bold text-slate-500">Sign in</h6>
 						</div>
 					</div>
 					<div class="flex-auto px-4 py-10 pt-0 lg:px-10">
@@ -46,10 +42,7 @@ function onSubmit(values, { setErrors }) {
 							:validation-schema="schema"
 							v-slot="{ errors, isSubmitting }"
 						>
-							<FormError
-								v-if="errors.message"
-								:error="errors.message"
-							/>
+							<FormError v-if="errors.message" :error="errors.message" />
 							<div class="relative mb-3 w-full">
 								<Label htmlFor="email">Email</Label>
 								<Field
@@ -90,9 +83,7 @@ function onSubmit(values, { setErrors }) {
 									}"
 									:disabled="isSubmitting"
 								>
-									{{
-										isSubmitting ? 'Loading...' : 'Sign in'
-									}}
+									{{ isSubmitting ? 'Loading...' : 'Sign in' }}
 								</Button>
 							</div>
 						</Form>

@@ -10,19 +10,18 @@ import * as Yup from 'yup'
 
 const schema = Yup.object().shape({
 	name: Yup.string().required('Name is required'),
-	email: Yup.string()
-		.email('Email is not valid')
-		.required('Email is required'),
+	email: Yup.string().email('Email is not valid').required('Email is required'),
 	password: Yup.string().required('Password is required'),
+	confirmPassword: Yup.string()
+		.required('Confirm password is required')
+		.oneOf([Yup.ref('password')], 'Passwords do not match'),
 })
 
 function onSubmit(values, { setErrors }) {
 	const authStore = useAuthStore()
 	const { name, email, password } = values
 
-	return authStore
-		.register(name, email, password)
-		.catch((error) => console.log(error))
+	return authStore.register(name, email, password).catch((error) => console.log(error))
 }
 </script>
 
@@ -35,9 +34,7 @@ function onSubmit(values, { setErrors }) {
 				>
 					<div class="mb-0 rounded-t px-6 py-6">
 						<div class="text-center">
-							<h6 class="text-lg font-bold text-slate-500">
-								Sign up with
-							</h6>
+							<h6 class="text-lg font-bold text-slate-500">Sign up with</h6>
 						</div>
 					</div>
 					<div class="flex-auto px-4 py-10 pt-0 lg:px-10">
@@ -55,10 +52,7 @@ function onSubmit(values, { setErrors }) {
 									placeholder="Name"
 									required
 								/>
-								<InputError
-									v-if="errors.name"
-									:messages="errors.name"
-								/>
+								<InputError v-if="errors.name" :messages="errors.name" />
 							</div>
 
 							<div class="relative mb-3 w-full">
@@ -93,27 +87,19 @@ function onSubmit(values, { setErrors }) {
 								/>
 							</div>
 
-							<div>
-								<label
-									class="inline-flex cursor-pointer items-center"
-								>
-									<input
-										id="customCheckLogin"
-										type="checkbox"
-										class="form-checkbox ml-1 h-5 w-5 rounded border-0 text-slate-700 transition-all duration-150 ease-linear"
-									/>
-									<span
-										class="ml-2 text-sm font-semibold text-slate-600"
-									>
-										I agree with the
-										<a
-											href="javascript:void(0)"
-											class="text-emerald-500"
-										>
-											Privacy Policy
-										</a>
-									</span>
-								</label>
+							<div class="relative mb-3 w-full">
+								<Label htmlFor="password">Confirm password</Label>
+								<Field
+									name="confirmPassword"
+									type="password"
+									class="relative w-full rounded border border-slate-300 bg-white px-3 py-3 text-sm text-slate-600 placeholder-slate-300 outline-none focus:outline-none focus:ring"
+									placeholder="Confirm password"
+									required
+								/>
+								<InputError
+									v-if="errors.confirmPassword"
+									:messages="errors.confirmPassword"
+								/>
 							</div>
 
 							<div class="mt-6 text-center">
@@ -124,11 +110,7 @@ function onSubmit(values, { setErrors }) {
 									}"
 									:disabled="isSubmitting"
 								>
-									{{
-										isSubmitting
-											? 'Loading...'
-											: 'Create Account'
-									}}
+									{{ isSubmitting ? 'Loading...' : 'Create Account' }}
 								</Button>
 							</div>
 						</Form>

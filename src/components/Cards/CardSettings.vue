@@ -1,181 +1,107 @@
+<script setup>
+import { useUser } from '../../stores/user'
+import { Form, Field } from 'vee-validate'
+import axios from 'axios'
+import { reactive, ref } from 'vue'
+
+let user = ref()
+
+axios
+	.get('/api/user', {
+		headers: {
+			Authorization: `Bearer ${localStorage.getItem('token')}`,
+		},
+	})
+	.then((res) => {
+		user.value = res.data
+	})
+</script>
+
 <template>
-  <div
-    class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-100 border-0"
-  >
-    <div class="rounded-t bg-white mb-0 px-6 py-6">
-      <div class="text-center flex justify-between">
-        <h6 class="text-blueGray-700 text-xl font-bold">My account</h6>
-        <button
-          class="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
-          type="button"
-        >
-          Settings
-        </button>
-      </div>
-    </div>
-    <div class="flex-auto px-4 lg:px-10 py-10 pt-0">
-      <form>
-        <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
-          User Information
-        </h6>
-        <div class="flex flex-wrap">
-          <div class="w-full lg:w-6/12 px-4">
-            <div class="relative w-full mb-3">
-              <label
-                class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                htmlFor="grid-password"
-              >
-                Username
-              </label>
-              <input
-                type="text"
-                class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                value="lucky.jesse"
-              />
-            </div>
-          </div>
-          <div class="w-full lg:w-6/12 px-4">
-            <div class="relative w-full mb-3">
-              <label
-                class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                htmlFor="grid-password"
-              >
-                Email address
-              </label>
-              <input
-                type="email"
-                class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                value="jesse@example.com"
-              />
-            </div>
-          </div>
-          <div class="w-full lg:w-6/12 px-4">
-            <div class="relative w-full mb-3">
-              <label
-                class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                htmlFor="grid-password"
-              >
-                First Name
-              </label>
-              <input
-                type="text"
-                class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                value="Lucky"
-              />
-            </div>
-          </div>
-          <div class="w-full lg:w-6/12 px-4">
-            <div class="relative w-full mb-3">
-              <label
-                class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                htmlFor="grid-password"
-              >
-                Last Name
-              </label>
-              <input
-                type="text"
-                class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                value="Jesse"
-              />
-            </div>
-          </div>
-        </div>
-
-        <hr class="mt-6 border-b-1 border-blueGray-300" />
-
-        <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
-          Contact Information
-        </h6>
-        <div class="flex flex-wrap">
-          <div class="w-full lg:w-12/12 px-4">
-            <div class="relative w-full mb-3">
-              <label
-                class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                htmlFor="grid-password"
-              >
-                Address
-              </label>
-              <input
-                type="text"
-                class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
-              />
-            </div>
-          </div>
-          <div class="w-full lg:w-4/12 px-4">
-            <div class="relative w-full mb-3">
-              <label
-                class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                htmlFor="grid-password"
-              >
-                City
-              </label>
-              <input
-                type="email"
-                class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                value="New York"
-              />
-            </div>
-          </div>
-          <div class="w-full lg:w-4/12 px-4">
-            <div class="relative w-full mb-3">
-              <label
-                class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                htmlFor="grid-password"
-              >
-                Country
-              </label>
-              <input
-                type="text"
-                class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                value="United States"
-              />
-            </div>
-          </div>
-          <div class="w-full lg:w-4/12 px-4">
-            <div class="relative w-full mb-3">
-              <label
-                class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                htmlFor="grid-password"
-              >
-                Postal Code
-              </label>
-              <input
-                type="text"
-                class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                value="Postal Code"
-              />
-            </div>
-          </div>
-        </div>
-
-        <hr class="mt-6 border-b-1 border-blueGray-300" />
-
-        <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
-          About Me
-        </h6>
-        <div class="flex flex-wrap">
-          <div class="w-full lg:w-12/12 px-4">
-            <div class="relative w-full mb-3">
-              <label
-                class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                htmlFor="grid-password"
-              >
-                About me
-              </label>
-              <textarea
-                type="text"
-                class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                rows="4"
-              >
-                    A beautiful UI Kit and Admin for VueJS & Tailwind CSS. It is Free
-                    and Open Source.
-                  </textarea
-              >
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
+	<div
+		class="relative mb-6 flex w-full min-w-0 flex-col break-words rounded-lg border-0 bg-slate-100 shadow-lg"
+	>
+		<div class="mb-0 rounded-t bg-white px-6 py-6">
+			<div class="flex justify-between text-center">
+				<h6 class="text-xl font-bold text-slate-700">My account</h6>
+				<button
+					class="mr-1 rounded bg-emerald-500 px-4 py-2 text-xs font-bold uppercase text-white shadow outline-none transition-all duration-150 ease-linear hover:shadow-md focus:outline-none active:bg-emerald-600"
+					type="button"
+				>
+					Settings
+				</button>
+			</div>
+		</div>
+		<div class="flex-auto px-4 py-10 pt-0 lg:px-10">
+			<Form>
+				<h6 class="mt-3 mb-6 text-sm font-bold uppercase text-slate-400">
+					User Information
+				</h6>
+				<div class="flex flex-wrap">
+					<div class="w-full px-4 lg:w-6/12">
+						<div class="relative mb-3 w-full">
+							<label
+								class="mb-2 block text-xs font-bold uppercase text-slate-600"
+								htmlFor="grid-password"
+							>
+								Name
+							</label>
+							<input
+								type="text"
+								class="w-full rounded border-0 bg-white px-3 py-3 text-sm text-slate-600 placeholder-slate-300 shadow transition-all duration-150 ease-linear focus:outline-none focus:ring"
+								:value="user.user.name"
+							/>
+						</div>
+					</div>
+					<div class="w-full px-4 lg:w-6/12">
+						<div class="relative mb-3 w-full">
+							<label
+								class="mb-2 block text-xs font-bold uppercase text-slate-600"
+								htmlFor="grid-password"
+							>
+								Email address
+							</label>
+							<input
+								type="email"
+								class="w-full rounded border-0 bg-white px-3 py-3 text-sm text-slate-600 placeholder-slate-300 shadow transition-all duration-150 ease-linear focus:outline-none focus:ring"
+								:value="user.user.email"
+							/>
+						</div>
+					</div>
+				</div>
+				<div class="flex flex-wrap">
+					<div class="w-full px-4 lg:w-6/12">
+						<div class="relative mb-3 w-full">
+							<label
+								class="mb-2 block text-xs font-bold uppercase text-slate-600"
+								htmlFor="grid-password"
+							>
+								Name
+							</label>
+							<input
+								type="text"
+								class="w-full rounded border-0 bg-white px-3 py-3 text-sm text-slate-600 placeholder-slate-300 shadow transition-all duration-150 ease-linear focus:outline-none focus:ring"
+								:value="user.user.name"
+							/>
+						</div>
+					</div>
+					<div class="w-full px-4 lg:w-6/12">
+						<div class="relative mb-3 w-full">
+							<label
+								class="mb-2 block text-xs font-bold uppercase text-slate-600"
+								htmlFor="grid-password"
+							>
+								Email address
+							</label>
+							<input
+								type="email"
+								class="w-full rounded border-0 bg-white px-3 py-3 text-sm text-slate-600 placeholder-slate-300 shadow transition-all duration-150 ease-linear focus:outline-none focus:ring"
+								:value="user.user.email"
+							/>
+						</div>
+					</div>
+				</div>
+			</Form>
+		</div>
+	</div>
 </template>

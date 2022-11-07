@@ -42,10 +42,6 @@ const toggleDropdown = (event) => {
 				block: dropdownPopoverShow,
 			}"
 		>
-			<span
-				class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-slate-700"
-			>
-			</span>
 			<a
 				href="javascript:void(0);"
 				class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-slate-700"
@@ -60,7 +56,7 @@ const toggleDropdown = (event) => {
 			</a>
 			<div class="my-2 h-0 border border-solid border-slate-100" />
 			<router-link
-				class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-normal text-slate-700"
+				class="block w-full whitespace-nowrap bg-transparent py-2 px-4 text-sm font-semibold tracking-wide text-red-700"
 				:to="{ name: 'logout' }"
 			>
 				Logout

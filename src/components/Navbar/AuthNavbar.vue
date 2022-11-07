@@ -13,9 +13,7 @@ const setNavbarOpen = () => {
 	<nav
 		class="navbar-expand-lg absolute top-0 z-50 flex w-full flex-wrap items-center justify-between px-2 py-3"
 	>
-		<div
-			class="container mx-auto flex flex-wrap items-center justify-between px-4"
-		>
+		<div class="container mx-auto flex flex-wrap items-center justify-between px-4">
 			<div
 				class="relative flex w-full justify-between lg:static lg:block lg:w-auto lg:justify-start"
 			>
@@ -62,9 +60,7 @@ const setNavbarOpen = () => {
 							<i
 								class="fab fa-facebook leading-lg text-lg text-slate-400 lg:text-slate-200"
 							/>
-							<span class="ml-2 inline-block lg:hidden"
-								>Share</span
-							>
+							<span class="ml-2 inline-block lg:hidden">Share</span>
 						</a>
 					</li>
 
@@ -77,9 +73,7 @@ const setNavbarOpen = () => {
 							<i
 								class="fab fa-twitter leading-lg text-lg text-slate-400 lg:text-slate-200"
 							/>
-							<span class="ml-2 inline-block lg:hidden"
-								>Tweet</span
-							>
+							<span class="ml-2 inline-block lg:hidden">Tweet</span>
 						</a>
 					</li>
 
@@ -92,9 +86,7 @@ const setNavbarOpen = () => {
 							<i
 								class="fab fa-github leading-lg text-lg text-slate-400 lg:text-slate-200"
 							/>
-							<span class="ml-2 inline-block lg:hidden"
-								>Star</span
-							>
+							<span class="ml-2 inline-block lg:hidden">Star</span>
 						</a>
 					</li>
 

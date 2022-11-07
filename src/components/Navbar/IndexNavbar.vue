@@ -12,9 +12,7 @@ const setNavbarOpen = () => {
 	<nav
 		class="navbar-expand-lg fixed top-0 z-50 flex w-full flex-wrap items-center justify-between bg-white px-2 py-3 shadow"
 	>
-		<div
-			class="container mx-auto flex flex-wrap items-center justify-between px-4"
-		>
+		<div class="container mx-auto flex flex-wrap items-center justify-between px-4">
 			<div
 				class="relative flex w-full justify-between lg:static lg:block lg:w-auto lg:justify-start"
 			>
@@ -65,9 +63,7 @@ const setNavbarOpen = () => {
 							<i
 								class="fab fa-facebook leading-lg text-lg text-slate-400"
 							/>
-							<span class="ml-2 inline-block lg:hidden"
-								>Share</span
-							>
+							<span class="ml-2 inline-block lg:hidden">Share</span>
 						</a>
 					</li>
 

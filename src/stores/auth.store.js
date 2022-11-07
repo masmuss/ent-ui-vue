@@ -1,6 +1,5 @@
 import { defineStore } from 'pinia'
 import axios from 'axios'
-import { useRoute } from 'vue-router'
 import router from '../router'
 
 export const useAuthStore = defineStore({
@@ -8,6 +7,7 @@ export const useAuthStore = defineStore({
 	state: () => ({
 		user: null,
 		loggedIn: localStorage.getItem('token') ? true : false,
+		token: localStorage.getItem('token') || null,
 	}),
 	actions: {
 		async register(name, email, password) {
@@ -28,9 +28,8 @@ export const useAuthStore = defineStore({
 		async login(email, password) {
 			await axios.get('/sanctum/csrf-cookie')
 
-			const response = (
-				await axios.post('/api/auth/login', { email, password })
-			).data
+			const response = (await axios.post('/api/auth/login', { email, password }))
+				.data
 
 			if (response) {
 				const token = `Bearer ${response.token}`
@@ -45,9 +44,7 @@ export const useAuthStore = defineStore({
 			const response = (
 				await axios.post('/api/auth/logout', {
 					headers: {
-						Authorization: `Bearer ${localStorage.getItem(
-							'token'
-						)}`,
+						Authorization: `Bearer ${localStorage.getItem('token')}`,
 					},
 				})
 			).data

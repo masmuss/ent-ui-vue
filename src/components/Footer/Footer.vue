@@ -30,8 +30,7 @@ let date = ref(new Date().getFullYear())
 				<div class="w-full px-4 lg:w-6/12">
 					<h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
 					<h5 class="mt-0 mb-2 text-lg text-slate-600">
-						Find us on any of these platforms, we respond 1-2
-						business days.
+						Find us on any of these platforms, we respond 1-2 business days.
 					</h5>
 					<div class="mt-6 mb-6 lg:mb-0">
 						<button
@@ -148,9 +147,7 @@ let date = ref(new Date().getFullYear())
 				</div>
 			</div>
 			<hr class="my-6 border-slate-300" />
-			<div
-				class="flex flex-wrap items-center justify-center md:justify-between"
-			>
+			<div class="flex flex-wrap items-center justify-center md:justify-between">
 				<div class="mx-auto w-full px-4 text-center md:w-4/12">
 					<div class="py-1 text-sm font-semibold text-slate-500">
 						Copyright © {{ date }} Vue Notus by

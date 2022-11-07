@@ -44,10 +44,10 @@ defineProps({
 		<div class="flex-auto p-4">
 			<div class="flex flex-wrap">
 				<div class="relative w-full max-w-full flex-1 flex-grow pr-4">
-					<h5 class="text-xs font-bold uppercase text-blueGray-400">
+					<h5 class="text-xs font-bold uppercase text-slate-400">
 						{{ statSubtitle }}
 					</h5>
-					<span class="text-xl font-semibold text-blueGray-700">
+					<span class="text-xl font-semibold text-slate-700">
 						{{ statTitle }}
 					</span>
 				</div>
@@ -60,13 +60,11 @@ defineProps({
 					</div>
 				</div>
 			</div>
-			<p class="mt-4 text-sm text-blueGray-400">
+			<p class="mt-4 text-sm text-slate-400">
 				<span class="mr-2" :class="[statPercentColor]">
 					<i
 						:class="[
-							statArrow === 'up'
-								? `fas fa-arrow-up`
-								: `fas fa-arrow-down`,
+							statArrow === 'up' ? `fas fa-arrow-up` : `fas fa-arrow-down`,
 						]"
 					></i>
 					{{ statPercent }}%
