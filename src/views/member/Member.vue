@@ -1,6 +1,7 @@
 <script>
 import { onMounted, ref } from 'vue'
 import axios from 'axios'
+import Swal from 'sweetalert2'
 import TableDropdown from '../../components/Dropdown/TableDropdown.vue'
 
 export default {
@@ -19,23 +20,34 @@ export default {
 				})
 		})
 
-		const deleteMember = async (id) => {
-			await axios
-				.delete(`/api/members/${id}`)
-				.then((result) => {
-					console.log(result)
-					axios
-						.get('/api/members')
+		const deleteMember = (id) => {
+			Swal.fire({
+				title: 'Are you sure?',
+				text: "You won't be able to revert this!",
+				icon: 'warning',
+				showCancelButton: true,
+				confirmButtonColor: '#3085d6',
+				cancelButtonColor: '#d33',
+				confirmButtonText: 'Yes, delete it!',
+			}).then(async (result) => {
+				if (result.isConfirmed) {
+					await axios
+						.delete(`/api/members/${id}`)
 						.then((result) => {
-							members.value = result.data
+							axios
+								.get('/api/members')
+								.then((result) => {
+									members.value = result.data
+								})
+								.catch((error) => {
+									console.log(error)
+								})
 						})
 						.catch((error) => {
 							console.log(error)
 						})
-				})
-				.catch((error) => {
-					console.log(error)
-				})
+				}
+			})
 		}
 
 		return {

@@ -119,18 +119,18 @@ export default {
 				<div class="block w-full overflow-x-auto p-4">
 					<form action="">
 						<div class="relative mb-3 w-full">
-								<Label htmlFor="name">Name</Label>
-								<input
-									name="name"
-									type="text"
-									class="relative w-full rounded border border-slate-300 bg-white px-3 py-3 text-sm text-slate-600 placeholder-slate-300 outline-none focus:outline-none focus:ring"
-									placeholder="1234567890"
-									required
-								/>
-							</div>
+							<Label htmlFor="name">Name</Label>
+							<input
+								name="name"
+								type="text"
+								class="relative w-full rounded border border-slate-300 bg-white px-3 py-3 text-sm text-slate-600 placeholder-slate-300 outline-none focus:outline-none focus:ring"
+								placeholder="1234567890"
+								required
+							/>
+						</div>
 					</form>
 				</div>
-			</div>	
+			</div>
 		</div>
 	</div>
 </template>
