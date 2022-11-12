@@ -19,10 +19,7 @@ let date = ref(new Date().getFullYear())
 				x="0"
 				y="0"
 			>
-				<polygon
-					class="fill-current text-slate-200"
-					points="2560 0 2560 100 0 100"
-				></polygon>
+				<polygon class="fill-current text-slate-200" points="2560 0 2560 100 0 100"></polygon>
 			</svg>
 		</div>
 		<div class="container mx-auto px-4">
@@ -62,9 +59,7 @@ let date = ref(new Date().getFullYear())
 				<div class="w-full px-4 lg:w-6/12">
 					<div class="items-top mb-6 flex flex-wrap">
 						<div class="ml-auto w-full px-4 lg:w-4/12">
-							<span
-								class="mb-2 block text-sm font-semibold uppercase text-slate-500"
-							>
+							<span class="mb-2 block text-sm font-semibold uppercase text-slate-500">
 								Useful Links
 							</span>
 							<ul class="list-unstyled">
@@ -103,9 +98,7 @@ let date = ref(new Date().getFullYear())
 							</ul>
 						</div>
 						<div class="w-full px-4 lg:w-4/12">
-							<span
-								class="mb-2 block text-sm font-semibold uppercase text-slate-500"
-							>
+							<span class="mb-2 block text-sm font-semibold uppercase text-slate-500">
 								Other Resources
 							</span>
 							<ul class="list-unstyled">

@@ -21,12 +21,7 @@ const toggleDropdown = (event) => {
 
 <template>
 	<div>
-		<a
-			class="block text-slate-500"
-			href="#pablo"
-			ref="btnDropdownRef"
-			v-on:click="toggleDropdown($event)"
-		>
+		<a class="block text-slate-500" href="#pablo" ref="btnDropdownRef" v-on:click="toggleDropdown($event)">
 			<div class="flex items-center">
 				<span
 					class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-slate-200 text-sm text-white"

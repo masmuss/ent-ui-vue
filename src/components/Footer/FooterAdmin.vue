@@ -10,9 +10,7 @@ let date = ref(new Date().getFullYear())
 			<hr class="border-b-1 mb-4 border-slate-200" />
 			<div class="flex flex-wrap items-center justify-center md:justify-between">
 				<div class="w-full px-4 md:w-4/12">
-					<div
-						class="py-1 text-center text-sm font-semibold text-slate-500 md:text-left"
-					>
+					<div class="py-1 text-center text-sm font-semibold text-slate-500 md:text-left">
 						Copyright © {{ date }}
 						<a
 							href="https://www.creative-tim.com?ref=vn-footer-admin"

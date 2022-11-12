@@ -18,9 +18,7 @@ axios
 </script>
 
 <template>
-	<div
-		class="relative mb-6 flex w-full min-w-0 flex-col break-words rounded-lg border-0 bg-slate-100 shadow-lg"
-	>
+	<div class="relative mb-6 flex w-full min-w-0 flex-col break-words rounded-lg border-0 bg-slate-100 shadow-lg">
 		<div class="mb-0 rounded-t bg-white px-6 py-6">
 			<div class="flex justify-between text-center">
 				<h6 class="text-xl font-bold text-slate-700">My account</h6>
@@ -34,9 +32,7 @@ axios
 		</div>
 		<div class="flex-auto px-4 py-10 pt-0 lg:px-10">
 			<Form>
-				<h6 class="mt-3 mb-6 text-sm font-bold uppercase text-slate-400">
-					User Information
-				</h6>
+				<h6 class="mt-3 mb-6 text-sm font-bold uppercase text-slate-400">User Information</h6>
 				<div class="flex flex-wrap">
 					<div class="w-full px-4 lg:w-6/12">
 						<div class="relative mb-3 w-full">

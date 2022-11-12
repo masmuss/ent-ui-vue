@@ -38,11 +38,7 @@ function onSubmit(values, { setErrors }) {
 						</div>
 					</div>
 					<div class="flex-auto px-4 py-10 pt-0 lg:px-10">
-						<Form
-							@submit="onSubmit"
-							:validation-schema="schema"
-							v-slot="{ errors, isSubmitting }"
-						>
+						<Form @submit="onSubmit" :validation-schema="schema" v-slot="{ errors, isSubmitting }">
 							<div class="relative mb-3 w-full">
 								<Label htmlFor="name">Name</Label>
 								<Field
@@ -65,10 +61,7 @@ function onSubmit(values, { setErrors }) {
 									autocomplete="email"
 									required
 								/>
-								<InputError
-									v-if="errors.email"
-									:messages="errors.email"
-								/>
+								<InputError v-if="errors.email" :messages="errors.email" />
 							</div>
 
 							<div class="relative mb-3 w-full">
@@ -81,10 +74,7 @@ function onSubmit(values, { setErrors }) {
 									autocomplete="current-password"
 									required
 								/>
-								<InputError
-									v-if="errors.password"
-									:messages="errors.password"
-								/>
+								<InputError v-if="errors.password" :messages="errors.password" />
 							</div>
 
 							<div class="relative mb-3 w-full">
@@ -96,10 +86,7 @@ function onSubmit(values, { setErrors }) {
 									placeholder="Confirm password"
 									required
 								/>
-								<InputError
-									v-if="errors.confirmPassword"
-									:messages="errors.confirmPassword"
-								/>
+								<InputError v-if="errors.confirmPassword" :messages="errors.confirmPassword" />
 							</div>
 
 							<div class="mt-6 text-center">

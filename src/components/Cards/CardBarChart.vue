@@ -1,13 +1,9 @@
 <template>
-	<div
-		class="relative mb-6 flex w-full min-w-0 flex-col break-words rounded bg-white shadow-lg"
-	>
+	<div class="relative mb-6 flex w-full min-w-0 flex-col break-words rounded bg-white shadow-lg">
 		<div class="mb-0 rounded-t bg-transparent px-4 py-3">
 			<div class="flex flex-wrap items-center">
 				<div class="relative w-full max-w-full flex-1 flex-grow">
-					<h6 class="text-blueGray-400 mb-1 text-xs font-semibold uppercase">
-						Performance
-					</h6>
+					<h6 class="text-blueGray-400 mb-1 text-xs font-semibold uppercase">Performance</h6>
 					<h2 class="text-blueGray-700 text-xl font-semibold">Total orders</h2>
 				</div>
 			</div>
@@ -27,15 +23,7 @@ export default {
 			let config = {
 				type: 'bar',
 				data: {
-					labels: [
-						'January',
-						'February',
-						'March',
-						'April',
-						'May',
-						'June',
-						'July',
-					],
+					labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
 					datasets: [
 						{
 							label: new Date().getFullYear(),

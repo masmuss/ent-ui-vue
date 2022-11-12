@@ -18,9 +18,7 @@ function onSubmit(values, { setErrors }) {
 	const authStore = useAuthStore()
 	const { email, password } = values
 
-	return authStore
-		.login(email, password)
-		.catch((error) => setErrors({ message: error }))
+	return authStore.login(email, password).catch((error) => setErrors({ message: error }))
 }
 </script>
 
@@ -37,11 +35,7 @@ function onSubmit(values, { setErrors }) {
 						</div>
 					</div>
 					<div class="flex-auto px-4 py-10 pt-0 lg:px-10">
-						<Form
-							@submit="onSubmit"
-							:validation-schema="schema"
-							v-slot="{ errors, isSubmitting }"
-						>
+						<Form @submit="onSubmit" :validation-schema="schema" v-slot="{ errors, isSubmitting }">
 							<FormError v-if="errors.message" :error="errors.message" />
 							<div class="relative mb-3 w-full">
 								<Label htmlFor="email">Email</Label>
@@ -53,10 +47,7 @@ function onSubmit(values, { setErrors }) {
 									autocomplete="email"
 									required
 								/>
-								<InputError
-									v-if="errors.email"
-									:messages="errors.email"
-								/>
+								<InputError v-if="errors.email" :messages="errors.email" />
 							</div>
 
 							<div class="relative mb-3 w-full">
@@ -69,10 +60,7 @@ function onSubmit(values, { setErrors }) {
 									autocomplete="current-password"
 									required
 								/>
-								<InputError
-									v-if="errors.password"
-									:messages="errors.password"
-								/>
+								<InputError v-if="errors.password" :messages="errors.password" />
 							</div>
 
 							<div class="mt-6 text-center">

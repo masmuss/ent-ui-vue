@@ -10,14 +10,9 @@ const authStore = useAuthStore()
 	<nav
 		class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent p-4 md:flex-row md:flex-nowrap md:justify-start"
 	>
-		<div
-			class="mx-autp flex w-full flex-wrap items-center justify-between px-4 md:flex-nowrap md:px-10"
-		>
+		<div class="mx-autp flex w-full flex-wrap items-center justify-between px-4 md:flex-nowrap md:px-10">
 			<!-- Brand -->
-			<a
-				class="hidden text-sm font-semibold uppercase text-white lg:inline-block"
-				href="javascript:void(0)"
-			>
+			<a class="hidden text-sm font-semibold uppercase text-white lg:inline-block" href="javascript:void(0)">
 				Dashboard
 			</a>
 			<!-- Form -->

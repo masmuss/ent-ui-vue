@@ -36,9 +36,7 @@ const toggleDropdown = (event) => {
 				block: dropdownPopoverShow,
 			}"
 		>
-			<span
-				class="block w-full whitespace-nowrap bg-transparent px-4 pt-2 pb-0 text-sm font-bold text-slate-400"
-			>
+			<span class="block w-full whitespace-nowrap bg-transparent px-4 pt-2 pb-0 text-sm font-bold text-slate-400">
 				Admin Layout
 			</span>
 			<router-link
@@ -66,9 +64,7 @@ const toggleDropdown = (event) => {
 				Maps
 			</router-link>
 			<div class="mx-4 my-2 h-0 border border-solid border-slate-100" />
-			<span
-				class="block w-full whitespace-nowrap bg-transparent px-4 pt-2 pb-0 text-sm font-bold text-slate-400"
-			>
+			<span class="block w-full whitespace-nowrap bg-transparent px-4 pt-2 pb-0 text-sm font-bold text-slate-400">
 				Auth Layout
 			</span>
 			<router-link
@@ -84,9 +80,7 @@ const toggleDropdown = (event) => {
 				Register
 			</router-link>
 			<div class="mx-4 my-2 h-0 border border-solid border-slate-100" />
-			<span
-				class="block w-full whitespace-nowrap bg-transparent px-4 pt-2 pb-0 text-sm font-bold text-slate-400"
-			>
+			<span class="block w-full whitespace-nowrap bg-transparent px-4 pt-2 pb-0 text-sm font-bold text-slate-400">
 				No Layout
 			</span>
 			<router-link

@@ -8,6 +8,6 @@ import '@fortawesome/fontawesome-free/css/all.css'
 
 // axios.defaults.withCredentials = true
 // axios.defaults.baseURL = `${import.meta.env.VITE_API_ENDPOINT}`
-axios.defaults.baseURL = 'http://localhost:8000'
+axios.defaults.baseURL = 'http://localhost:8000/'
 
 createApp(App).use(createPinia()).use(router).mount('#app')

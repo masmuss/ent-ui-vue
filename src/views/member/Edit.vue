@@ -104,14 +104,10 @@ export default {
 <template>
 	<div class="mt-4 flex flex-wrap">
 		<div class="mb-12 w-full px-4">
-			<div
-				class="relative mb-6 flex w-full min-w-0 flex-col break-words rounded bg-white shadow-lg"
-			>
+			<div class="relative mb-6 flex w-full min-w-0 flex-col break-words rounded bg-white shadow-lg">
 				<div class="mb-0 rounded-t border-0 px-4 py-3">
 					<div class="flex flex-wrap items-center">
-						<div
-							class="relative flex w-full max-w-full flex-grow items-center justify-between px-4"
-						>
+						<div class="relative flex w-full max-w-full flex-grow items-center justify-between px-4">
 							<h3 class="bg-white text-lg font-semibold">Create Member</h3>
 						</div>
 					</div>
@@ -199,11 +195,7 @@ export default {
 									required
 								>
 									<option selected disabled>Choose division</option>
-									<option
-										v-for="division in divisions.data"
-										:key="division.id"
-										:value="division.id"
-									>
+									<option v-for="division in divisions.data" :key="division.id" :value="division.id">
 										{{ division.title }}
 									</option>
 								</Field>

@@ -30,17 +30,11 @@ export default {
 <template>
 	<div class="mt-4 flex flex-wrap">
 		<div class="mb-12 w-full px-4">
-			<div
-				class="relative mb-6 flex w-full min-w-0 flex-col break-words rounded bg-white shadow-lg"
-			>
+			<div class="relative mb-6 flex w-full min-w-0 flex-col break-words rounded bg-white shadow-lg">
 				<div class="mb-0 rounded-t border-0 px-4 py-3">
 					<div class="flex flex-wrap items-center">
-						<div
-							class="relative flex w-full max-w-full flex-grow items-center justify-between px-4"
-						>
-							<h3 class="bg-white text-lg font-semibold">
-								Department table
-							</h3>
+						<div class="relative flex w-full max-w-full flex-grow items-center justify-between px-4">
+							<h3 class="bg-white text-lg font-semibold">Department table</h3>
 						</div>
 					</div>
 				</div>
@@ -62,10 +56,7 @@ export default {
 							</tr>
 						</thead>
 						<tbody>
-							<tr
-								v-for="(department, index) in departments.data"
-								:key="department.id"
-							>
+							<tr v-for="(department, index) in departments.data" :key="department.id">
 								<td
 									class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
 								>
@@ -74,10 +65,7 @@ export default {
 								<td
 									class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
 								>
-									<strong
-										class="text-sm tracking-wide text-slate-700"
-										>{{ department.level }}</strong
-									>
+									<strong class="text-sm tracking-wide text-slate-700">{{ department.level }}</strong>
 								</td>
 								<td
 									class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"

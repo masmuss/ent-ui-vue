@@ -10,13 +10,9 @@ const setNavbarOpen = () => {
 </script>
 
 <template>
-	<nav
-		class="navbar-expand-lg absolute top-0 z-50 flex w-full flex-wrap items-center justify-between px-2 py-3"
-	>
+	<nav class="navbar-expand-lg absolute top-0 z-50 flex w-full flex-wrap items-center justify-between px-2 py-3">
 		<div class="container mx-auto flex flex-wrap items-center justify-between px-4">
-			<div
-				class="relative flex w-full justify-between lg:static lg:block lg:w-auto lg:justify-start"
-			>
+			<div class="relative flex w-full justify-between lg:static lg:block lg:w-auto lg:justify-start">
 				<router-link
 					class="mr-4 inline-block whitespace-nowrap py-2 text-sm font-bold uppercase leading-relaxed text-white"
 					to="/"
@@ -42,9 +38,7 @@ const setNavbarOpen = () => {
 							class="flex items-center px-3 py-4 text-xs font-bold uppercase text-slate-700 lg:py-2 lg:text-white lg:hover:text-slate-200"
 							href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/notus?ref=vn-auth-navbar"
 						>
-							<i
-								class="far fa-file-alt leading-lg mr-2 text-lg text-slate-400 lg:text-slate-200"
-							/>
+							<i class="far fa-file-alt leading-lg mr-2 text-lg text-slate-400 lg:text-slate-200" />
 							Docs
 						</a>
 					</li>
@@ -57,9 +51,7 @@ const setNavbarOpen = () => {
 							href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdemos.creative-tim.com%2Fvue-notus%2F%23%2F"
 							target="_blank"
 						>
-							<i
-								class="fab fa-facebook leading-lg text-lg text-slate-400 lg:text-slate-200"
-							/>
+							<i class="fab fa-facebook leading-lg text-lg text-slate-400 lg:text-slate-200" />
 							<span class="ml-2 inline-block lg:hidden">Share</span>
 						</a>
 					</li>
@@ -70,9 +62,7 @@ const setNavbarOpen = () => {
 							href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdemos.creative-tim.com%2Fvue-notus%2F%23%2F&text=Start%20your%20development%20with%20a%20Free%20Tailwind%20CSS%20and%20VueJS%20UI%20Kit%20and%20Admin.%20Let%20Vue%20Notus%20amaze%20you%20with%20its%20cool%20features%20and%20build%20tools%20and%20get%20your%20project%20to%20a%20whole%20new%20level.%20"
 							target="_blank"
 						>
-							<i
-								class="fab fa-twitter leading-lg text-lg text-slate-400 lg:text-slate-200"
-							/>
+							<i class="fab fa-twitter leading-lg text-lg text-slate-400 lg:text-slate-200" />
 							<span class="ml-2 inline-block lg:hidden">Tweet</span>
 						</a>
 					</li>
@@ -83,9 +73,7 @@ const setNavbarOpen = () => {
 							href="https://github.com/creativetimofficial/vue-notus?ref=vn-auth-navbar"
 							target="_blank"
 						>
-							<i
-								class="fab fa-github leading-lg text-lg text-slate-400 lg:text-slate-200"
-							/>
+							<i class="fab fa-github leading-lg text-lg text-slate-400 lg:text-slate-200" />
 							<span class="ml-2 inline-block lg:hidden">Star</span>
 						</a>
 					</li>

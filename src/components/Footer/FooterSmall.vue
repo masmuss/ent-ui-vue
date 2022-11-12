@@ -12,17 +12,12 @@ defineProps({
 </script>
 
 <template>
-	<footer
-		class="pb-6"
-		:class="[absolute ? 'absolute bottom-0 w-full bg-slate-800' : 'relative']"
-	>
+	<footer class="pb-6" :class="[absolute ? 'absolute bottom-0 w-full bg-slate-800' : 'relative']">
 		<div class="container mx-auto px-4">
 			<hr class="border-b-1 mb-6 border-slate-600" />
 			<div class="flex flex-wrap items-center justify-center md:justify-between">
 				<div class="w-full px-4 md:w-4/12">
-					<div
-						class="py-1 text-center text-sm font-semibold text-slate-500 md:text-left"
-					>
+					<div class="py-1 text-center text-sm font-semibold text-slate-500 md:text-left">
 						Copyright © {{ date }}
 						<a
 							href="https://www.creative-tim.com?ref=vn-footer-small"

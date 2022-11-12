@@ -26,17 +26,12 @@ import landing from '../assets/img/landing.jpg'
 							Vue Notus - A beautiful extension for Tailwind CSS.
 						</h2>
 						<p class="mt-4 text-lg leading-relaxed text-slate-500">
-							Vue Notus is Free and Open Source. It does not change any of
-							the CSS from
-							<a
-								href="https://tailwindcss.com/?ref=creativetim"
-								class="text-slate-600"
-								target="_blank"
-							>
+							Vue Notus is Free and Open Source. It does not change any of the CSS from
+							<a href="https://tailwindcss.com/?ref=creativetim" class="text-slate-600" target="_blank">
 								Tailwind CSS.
 							</a>
-							It features multiple HTML elements and it comes with dynamic
-							components for ReactJS, Vue and Angular.
+							It features multiple HTML elements and it comes with dynamic components for ReactJS, Vue and
+							Angular.
 						</p>
 						<div class="mt-12">
 							<a
@@ -66,10 +61,7 @@ import landing from '../assets/img/landing.jpg'
 		</section>
 
 		<section class="relative mt-48 bg-slate-100 pb-40 md:mt-40">
-			<div
-				class="absolute top-0 bottom-auto left-0 right-0 -mt-20 h-20 w-full"
-				style="transform: translateZ(0)"
-			>
+			<div class="absolute top-0 bottom-auto left-0 right-0 -mt-20 h-20 w-full" style="transform: translateZ(0)">
 				<svg
 					class="absolute bottom-0 overflow-hidden"
 					xmlns="http://www.w3.org/2000/svg"
@@ -79,17 +71,12 @@ import landing from '../assets/img/landing.jpg'
 					x="0"
 					y="0"
 				>
-					<polygon
-						class="fill-current text-slate-100"
-						points="2560 0 2560 100 0 100"
-					></polygon>
+					<polygon class="fill-current text-slate-100" points="2560 0 2560 100 0 100"></polygon>
 				</svg>
 			</div>
 			<div class="container mx-auto">
 				<div class="flex flex-wrap items-center">
-					<div
-						class="mr-auto ml-auto -mt-32 w-10/12 px-12 md:w-6/12 md:px-4 lg:w-4/12"
-					>
+					<div class="mr-auto ml-auto -mt-32 w-10/12 px-12 md:w-6/12 md:px-4 lg:w-4/12">
 						<div
 							class="relative mb-6 flex w-full min-w-0 flex-col break-words rounded-lg bg-emerald-500 shadow-lg"
 						>
@@ -110,14 +97,11 @@ import landing from '../assets/img/landing.jpg'
 										class="fill-current text-emerald-500"
 									></polygon>
 								</svg>
-								<h4 class="text-xl font-bold text-white">
-									Great for your awesome project
-								</h4>
+								<h4 class="text-xl font-bold text-white">Great for your awesome project</h4>
 								<p class="text-md mt-2 font-light text-white">
-									Putting together a page has never been easier than
-									matching together pre-made components. From landing
-									pages presentation to login areas, you can easily
-									customise and built your pages.
+									Putting together a page has never been easier than matching together pre-made
+									components. From landing pages presentation to login areas, you can easily customise
+									and built your pages.
 								</p>
 							</blockquote>
 						</div>
@@ -133,12 +117,9 @@ import landing from '../assets/img/landing.jpg'
 										>
 											<i class="fas fa-sitemap"></i>
 										</div>
-										<h6 class="mb-1 text-xl font-semibold">
-											CSS Components
-										</h6>
+										<h6 class="mb-1 text-xl font-semibold">CSS Components</h6>
 										<p class="mb-4 text-slate-500">
-											Vue Notus comes with a huge number of Fully
-											Coded CSS components.
+											Vue Notus comes with a huge number of Fully Coded CSS components.
 										</p>
 									</div>
 								</div>
@@ -149,12 +130,9 @@ import landing from '../assets/img/landing.jpg'
 										>
 											<i class="fas fa-drafting-compass"></i>
 										</div>
-										<h6 class="mb-1 text-xl font-semibold">
-											JavaScript Components
-										</h6>
+										<h6 class="mb-1 text-xl font-semibold">JavaScript Components</h6>
 										<p class="mb-4 text-slate-500">
-											We also feature many dynamic components for
-											React, NextJS, Vue and Angular.
+											We also feature many dynamic components for React, NextJS, Vue and Angular.
 										</p>
 									</div>
 								</div>
@@ -169,9 +147,8 @@ import landing from '../assets/img/landing.jpg'
 										</div>
 										<h6 class="mb-1 text-xl font-semibold">Pages</h6>
 										<p class="mb-4 text-slate-500">
-											This extension also comes with 3 sample pages.
-											They are fully coded so you can start working
-											instantly.
+											This extension also comes with 3 sample pages. They are fully coded so you
+											can start working instantly.
 										</p>
 									</div>
 								</div>
@@ -182,12 +159,10 @@ import landing from '../assets/img/landing.jpg'
 										>
 											<i class="fas fa-file-alt"></i>
 										</div>
-										<h6 class="mb-1 text-xl font-semibold">
-											Documentation
-										</h6>
+										<h6 class="mb-1 text-xl font-semibold">Documentation</h6>
 										<p class="mb-4 text-slate-500">
-											Built by developers for developers. You will
-											love how easy is to to work with Vue Notus.
+											Built by developers for developers. You will love how easy is to to work
+											with Vue Notus.
 										</p>
 									</div>
 								</div>
@@ -205,15 +180,10 @@ import landing from '../assets/img/landing.jpg'
 						>
 							<i class="fas fa-sitemap text-xl"></i>
 						</div>
-						<h3 class="mb-2 text-3xl font-semibold leading-normal">
-							CSS Components
-						</h3>
-						<p
-							class="mt-4 mb-4 text-lg font-light leading-relaxed text-slate-600"
-						>
-							Every element that you need in a product comes built in as a
-							component. All components fit perfectly with each other and
-							can have different colours.
+						<h3 class="mb-2 text-3xl font-semibold leading-normal">CSS Components</h3>
+						<p class="mt-4 mb-4 text-lg font-light leading-relaxed text-slate-600">
+							Every element that you need in a product comes built in as a component. All components fit
+							perfectly with each other and can have different colours.
 						</p>
 						<div class="block pb-6">
 							<span
@@ -268,9 +238,7 @@ import landing from '../assets/img/landing.jpg'
 					</div>
 
 					<div class="mr-auto ml-auto mt-32 w-full px-4 md:w-5/12">
-						<div
-							class="relative mb-6 mt-48 flex w-full min-w-0 flex-col md:mt-0"
-						>
+						<div class="relative mb-6 mt-48 flex w-full min-w-0 flex-col md:mt-0">
 							<img
 								alt="..."
 								:src="componentBtn"
@@ -313,51 +281,39 @@ import landing from '../assets/img/landing.jpg'
 									href="https://www.creative-tim.com/learning-lab/tailwind/svelte/alerts/notus?ref=vn-index"
 									target="_blank"
 								>
-									<div
-										class="rounded-lg bg-red-600 p-8 text-center shadow-lg"
-									>
+									<div class="rounded-lg bg-red-600 p-8 text-center shadow-lg">
 										<img
 											alt="..."
 											class="mx-auto w-16 max-w-full rounded-full bg-white p-2 shadow-md"
 											src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/svelte.jpg"
 										/>
-										<p class="mt-4 text-lg font-semibold text-white">
-											Svelte
-										</p>
+										<p class="mt-4 text-lg font-semibold text-white">Svelte</p>
 									</div>
 								</a>
 								<a
 									href="https://www.creative-tim.com/learning-lab/tailwind/react/alerts/notus?ref=vn-index"
 									target="_blank"
 								>
-									<div
-										class="mt-8 rounded-lg bg-sky-500 p-8 text-center shadow-lg"
-									>
+									<div class="mt-8 rounded-lg bg-sky-500 p-8 text-center shadow-lg">
 										<img
 											alt="..."
 											class="mx-auto w-16 max-w-full rounded-full bg-white p-2 shadow-md"
 											src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/react.jpg"
 										/>
-										<p class="mt-4 text-lg font-semibold text-white">
-											ReactJS
-										</p>
+										<p class="mt-4 text-lg font-semibold text-white">ReactJS</p>
 									</div>
 								</a>
 								<a
 									href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/alerts/notus?ref=vn-index"
 									target="_blank"
 								>
-									<div
-										class="mt-8 rounded-lg bg-slate-700 p-8 text-center shadow-lg"
-									>
+									<div class="mt-8 rounded-lg bg-slate-700 p-8 text-center shadow-lg">
 										<img
 											alt="..."
 											class="mx-auto w-16 max-w-full rounded-full bg-white p-2 shadow-md"
 											src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/nextjs.jpg"
 										/>
-										<p class="mt-4 text-lg font-semibold text-white">
-											NextJS
-										</p>
+										<p class="mt-4 text-lg font-semibold text-white">NextJS</p>
 									</div>
 								</a>
 							</div>
@@ -366,51 +322,39 @@ import landing from '../assets/img/landing.jpg'
 									href="https://www.creative-tim.com/learning-lab/tailwind/js/alerts/notus?ref=vn-index"
 									target="_blank"
 								>
-									<div
-										class="rounded-lg bg-yellow-500 p-8 text-center shadow-lg"
-									>
+									<div class="rounded-lg bg-yellow-500 p-8 text-center shadow-lg">
 										<img
 											alt="..."
 											class="mx-auto w-16 max-w-full rounded-full bg-white p-2 shadow-md"
 											src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/js.png"
 										/>
-										<p class="mt-4 text-lg font-semibold text-white">
-											JavaScript
-										</p>
+										<p class="mt-4 text-lg font-semibold text-white">JavaScript</p>
 									</div>
 								</a>
 								<a
 									href="https://www.creative-tim.com/learning-lab/tailwind/angular/alerts/notus?ref=vn-index"
 									target="_blank"
 								>
-									<div
-										class="mt-8 rounded-lg bg-red-700 p-8 text-center shadow-lg"
-									>
+									<div class="mt-8 rounded-lg bg-red-700 p-8 text-center shadow-lg">
 										<img
 											alt="..."
 											class="mx-auto w-16 max-w-full rounded-full bg-white p-2 shadow-md"
 											src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/angular.jpg"
 										/>
-										<p class="mt-4 text-lg font-semibold text-white">
-											Angular
-										</p>
+										<p class="mt-4 text-lg font-semibold text-white">Angular</p>
 									</div>
 								</a>
 								<a
 									href="https://www.creative-tim.com/learning-lab/tailwind/vue/alerts/notus?ref=vn-index"
 									target="_blank"
 								>
-									<div
-										class="mt-8 rounded-lg bg-emerald-500 p-8 text-center shadow-lg"
-									>
+									<div class="mt-8 rounded-lg bg-emerald-500 p-8 text-center shadow-lg">
 										<img
 											alt="..."
 											class="mx-auto w-16 max-w-full rounded-full bg-white p-2 shadow-md"
 											src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/vue.jpg"
 										/>
-										<p class="mt-4 text-lg font-semibold text-white">
-											Vue.js
-										</p>
+										<p class="mt-4 text-lg font-semibold text-white">Vue.js</p>
 									</div>
 								</a>
 							</div>
@@ -423,21 +367,13 @@ import landing from '../assets/img/landing.jpg'
 						>
 							<i class="fas fa-drafting-compass text-xl"></i>
 						</div>
-						<h3 class="mb-2 text-3xl font-semibold leading-normal">
-							Javascript Components
-						</h3>
-						<p
-							class="mt-4 mb-4 text-lg font-light leading-relaxed text-slate-600"
-						>
-							In order to create a great User Experience some components
-							require JavaScript. In this way you can manipulate the
-							elements on the page and give more options to your users.
+						<h3 class="mb-2 text-3xl font-semibold leading-normal">Javascript Components</h3>
+						<p class="mt-4 mb-4 text-lg font-light leading-relaxed text-slate-600">
+							In order to create a great User Experience some components require JavaScript. In this way
+							you can manipulate the elements on the page and give more options to your users.
 						</p>
-						<p
-							class="mt-4 mb-4 text-lg font-light leading-relaxed text-slate-600"
-						>
-							We created a set of Components that are dynamic and come to
-							help you.
+						<p class="mt-4 mb-4 text-lg font-light leading-relaxed text-slate-600">
+							We created a set of Components that are dynamic and come to help you.
 						</p>
 						<div class="block pb-6">
 							<span
@@ -504,9 +440,8 @@ import landing from '../assets/img/landing.jpg'
 							</div>
 							<h3 class="text-3xl font-semibold">Complex Documentation</h3>
 							<p class="mt-4 text-lg leading-relaxed text-slate-500">
-								This extension comes a lot of fully coded examples that
-								help you get started faster. You can adjust the colors and
-								also the programming language. You can change the text and
+								This extension comes a lot of fully coded examples that help you get started faster. You
+								can adjust the colors and also the programming language. You can change the text and
 								images and you're good to go.
 							</p>
 							<ul class="mt-6 list-none">
@@ -520,9 +455,7 @@ import landing from '../assets/img/landing.jpg'
 											</span>
 										</div>
 										<div>
-											<h4 class="text-slate-500">
-												Built by Developers for Developers
-											</h4>
+											<h4 class="text-slate-500">Built by Developers for Developers</h4>
 										</div>
 									</div>
 								</li>
@@ -536,9 +469,7 @@ import landing from '../assets/img/landing.jpg'
 											</span>
 										</div>
 										<div>
-											<h4 class="text-slate-500">
-												Carefully crafted code for Components
-											</h4>
+											<h4 class="text-slate-500">Carefully crafted code for Components</h4>
 										</div>
 									</div>
 								</li>
@@ -552,9 +483,7 @@ import landing from '../assets/img/landing.jpg'
 											</span>
 										</div>
 										<div>
-											<h4 class="text-slate-500">
-												Dynamic Javascript Components
-											</h4>
+											<h4 class="text-slate-500">Dynamic Javascript Components</h4>
 										</div>
 									</div>
 								</li>
@@ -566,10 +495,7 @@ import landing from '../assets/img/landing.jpg'
 						<img
 							alt="..."
 							class="max-w-full rounded-lg shadow-xl"
-							style="
-								transform: scale(1) perspective(1040px) rotateY(-11deg)
-									rotateX(2deg) rotate(2deg);
-							"
+							style="transform: scale(1) perspective(1040px) rotateY(-11deg) rotateX(2deg) rotate(2deg)"
 							:src="documentation"
 						/>
 					</div>
@@ -580,9 +506,8 @@ import landing from '../assets/img/landing.jpg'
 				<div class="w-full px-12 md:w-6/12 md:px-4">
 					<h2 class="text-4xl font-semibold">Beautiful Example Pages</h2>
 					<p class="mt-4 mb-4 text-lg leading-relaxed text-slate-500">
-						Vue Notus is a completly new product built using our past
-						experience in web templates. Take the examples we made for you and
-						start playing with them.
+						Vue Notus is a completly new product built using our past experience in web templates. Take the
+						examples we made for you and start playing with them.
 					</p>
 				</div>
 			</div>
@@ -594,9 +519,7 @@ import landing from '../assets/img/landing.jpg'
 					<div class="lg:w-12/12 -mt-24 w-full px-4">
 						<div class="flex flex-wrap">
 							<div class="w-full px-4 lg:w-4/12">
-								<h5 class="pb-4 text-center text-xl font-semibold">
-									Login Page
-								</h5>
+								<h5 class="pb-4 text-center text-xl font-semibold">Login Page</h5>
 								<router-link to="/auth/login">
 									<div
 										class="relative mb-6 flex w-full min-w-0 flex-col break-words rounded-lg bg-white shadow-lg transition-all duration-150 ease-linear hover:-mt-4"
@@ -611,9 +534,7 @@ import landing from '../assets/img/landing.jpg'
 							</div>
 
 							<div class="w-full px-4 lg:w-4/12">
-								<h5 class="pb-4 text-center text-xl font-semibold">
-									Profile Page
-								</h5>
+								<h5 class="pb-4 text-center text-xl font-semibold">Profile Page</h5>
 								<router-link to="/profile">
 									<div
 										class="relative mb-6 flex w-full min-w-0 flex-col break-words rounded-lg bg-white shadow-lg transition-all duration-150 ease-linear hover:-mt-4"
@@ -628,9 +549,7 @@ import landing from '../assets/img/landing.jpg'
 							</div>
 
 							<div class="w-full px-4 lg:w-4/12">
-								<h5 class="pb-4 text-center text-xl font-semibold">
-									Landing Page
-								</h5>
+								<h5 class="pb-4 text-center text-xl font-semibold">Landing Page</h5>
 								<router-link to="/landing">
 									<div
 										class="relative mb-6 flex w-full min-w-0 flex-col break-words rounded-lg bg-white shadow-lg transition-all duration-150 ease-linear hover:-mt-4"
@@ -658,29 +577,17 @@ import landing from '../assets/img/landing.jpg'
 						>
 							<i class="fas fa-code-branch text-xl"></i>
 						</div>
-						<h3 class="mb-2 text-3xl font-semibold leading-normal text-white">
-							Open Source
-						</h3>
-						<p
-							class="mt-4 mb-4 text-lg font-light leading-relaxed text-slate-400"
-						>
+						<h3 class="mb-2 text-3xl font-semibold leading-normal text-white">Open Source</h3>
+						<p class="mt-4 mb-4 text-lg font-light leading-relaxed text-slate-400">
 							Since
-							<a
-								href="https://tailwindcss.com/?ref=creativetim"
-								class="text-slate-300"
-								target="_blank"
-							>
+							<a href="https://tailwindcss.com/?ref=creativetim" class="text-slate-300" target="_blank">
 								Tailwind CSS
 							</a>
-							is an open source project we wanted to continue this movement
-							too. You can give this version a try to feel the design and
-							also test the quality of the code!
+							is an open source project we wanted to continue this movement too. You can give this version
+							a try to feel the design and also test the quality of the code!
 						</p>
-						<p
-							class="mt-0 mb-4 text-lg font-light leading-relaxed text-slate-400"
-						>
-							Get it free on Github and please help us spread the news with
-							a Star!
+						<p class="mt-0 mb-4 text-lg font-light leading-relaxed text-slate-400">
+							Get it free on Github and please help us spread the news with a Star!
 						</p>
 						<a
 							href="https://github.com/creativetimofficial/vue-notus?ref=vn-index"
@@ -701,10 +608,7 @@ import landing from '../assets/img/landing.jpg'
 		</section>
 
 		<section class="relative bg-slate-200 pb-16 pt-32">
-			<div
-				class="absolute top-0 bottom-auto left-0 right-0 -mt-20 h-20 w-full"
-				style="transform: translateZ(0)"
-			>
+			<div class="absolute top-0 bottom-auto left-0 right-0 -mt-20 h-20 w-full" style="transform: translateZ(0)">
 				<svg
 					class="absolute bottom-0 overflow-hidden"
 					xmlns="http://www.w3.org/2000/svg"
@@ -714,10 +618,7 @@ import landing from '../assets/img/landing.jpg'
 					x="0"
 					y="0"
 				>
-					<polygon
-						class="fill-current text-slate-200"
-						points="2560 0 2560 100 0 100"
-					></polygon>
+					<polygon class="fill-current text-slate-200" points="2560 0 2560 100 0 100"></polygon>
 				</svg>
 			</div>
 
@@ -729,13 +630,10 @@ import landing from '../assets/img/landing.jpg'
 						<p class="text-center text-4xl">
 							<span role="img" aria-label="love"> 😍 </span>
 						</p>
-						<h3 class="text-3xl font-semibold">
-							Do you love this Starter Kit?
-						</h3>
+						<h3 class="text-3xl font-semibold">Do you love this Starter Kit?</h3>
 						<p class="mt-4 mb-4 text-lg leading-relaxed text-slate-500">
-							Cause if you do, it can be yours now. Hit the buttons below to
-							navigate to get the Free version for your next project. Build
-							a new web app or give an old project a new look!
+							Cause if you do, it can be yours now. Hit the buttons below to navigate to get the Free
+							version for your next project. Build a new web app or give an old project a new look!
 						</p>
 						<div class="mt-10 flex flex-col sm:block">
 							<a

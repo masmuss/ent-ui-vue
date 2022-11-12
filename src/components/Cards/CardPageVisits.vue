@@ -1,7 +1,5 @@
 <template>
-	<div
-		class="relative mb-6 flex w-full min-w-0 flex-col break-words rounded bg-white shadow-lg"
-	>
+	<div class="relative mb-6 flex w-full min-w-0 flex-col break-words rounded bg-white shadow-lg">
 		<div class="mb-0 rounded-t border-0 px-4 py-3">
 			<div class="flex flex-wrap items-center">
 				<div class="relative w-full max-w-full flex-1 flex-grow px-4">
@@ -51,19 +49,13 @@
 						>
 							/argon/
 						</th>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							4,569
 						</td>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							340
 						</td>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							<i class="fas fa-arrow-up mr-4 text-emerald-500"></i>
 							46,53%
 						</td>
@@ -74,19 +66,13 @@
 						>
 							/argon/index.html
 						</th>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							3,985
 						</td>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							319
 						</td>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							<i class="fas fa-arrow-down mr-4 text-orange-500"></i>
 							46,53%
 						</td>
@@ -97,19 +83,13 @@
 						>
 							/argon/charts.html
 						</th>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							3,513
 						</td>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							294
 						</td>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							<i class="fas fa-arrow-down mr-4 text-orange-500"></i>
 							36,49%
 						</td>
@@ -120,19 +100,13 @@
 						>
 							/argon/tables.html
 						</th>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							2,050
 						</td>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							147
 						</td>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							<i class="fas fa-arrow-up mr-4 text-emerald-500"></i>
 							50,87%
 						</td>
@@ -143,19 +117,13 @@
 						>
 							/argon/profile.html
 						</th>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							1,795
 						</td>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							190
 						</td>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							<i class="fas fa-arrow-down mr-4 text-red-500"></i>
 							46,53%
 						</td>

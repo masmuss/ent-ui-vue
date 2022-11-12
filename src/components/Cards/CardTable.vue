@@ -27,9 +27,7 @@ defineProps({
 })
 </script>
 <template>
-	<div
-		class="relative mb-6 flex w-full min-w-0 flex-col break-words rounded bg-white shadow-lg"
-	>
+	<div class="relative mb-6 flex w-full min-w-0 flex-col break-words rounded bg-white shadow-lg">
 		<div class="mb-0 rounded-t border-0 px-4 py-3">
 			<div class="flex flex-wrap items-center">
 				<div class="relative w-full max-w-full flex-1 flex-grow px-4">
@@ -62,20 +60,14 @@ defineProps({
 				</thead>
 				<tbody>
 					<tr v-for="(collection, index) in collections">
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							{{ index + 1 }}
 						</td>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							<i class="fas fa-circle mr-2 text-orange-500"></i>
 							{{ collection.name }}
 						</td>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							<div class="flex">
 								<img
 									:src="team1"
@@ -99,15 +91,11 @@ defineProps({
 								/>
 							</div>
 						</td>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							<div class="flex items-center">
 								<span class="mr-2">60%</span>
 								<div class="relative w-full">
-									<div
-										class="flex h-2 overflow-hidden rounded bg-red-200 text-xs"
-									>
+									<div class="flex h-2 overflow-hidden rounded bg-red-200 text-xs">
 										<div
 											style="width: 60%"
 											class="flex flex-col justify-center whitespace-nowrap bg-red-500 text-center text-white shadow-none"

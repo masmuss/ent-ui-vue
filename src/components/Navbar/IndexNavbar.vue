@@ -13,9 +13,7 @@ const setNavbarOpen = () => {
 		class="navbar-expand-lg fixed top-0 z-50 flex w-full flex-wrap items-center justify-between bg-white px-2 py-3 shadow"
 	>
 		<div class="container mx-auto flex flex-wrap items-center justify-between px-4">
-			<div
-				class="relative flex w-full justify-between lg:static lg:block lg:w-auto lg:justify-start"
-			>
+			<div class="relative flex w-full justify-between lg:static lg:block lg:w-auto lg:justify-start">
 				<router-link to="/">
 					<a
 						class="mr-4 inline-block whitespace-nowrap py-2 text-sm font-bold uppercase leading-relaxed text-slate-700"
@@ -43,9 +41,7 @@ const setNavbarOpen = () => {
 							class="flex items-center px-3 py-2 text-xs font-bold uppercase text-slate-700 hover:text-slate-500"
 							href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/notus?ref=vn-index-navbar"
 						>
-							<i
-								class="far fa-file-alt leading-lg mr-2 text-lg text-slate-400"
-							/>
+							<i class="far fa-file-alt leading-lg mr-2 text-lg text-slate-400" />
 							Docs
 						</a>
 					</li>
@@ -60,9 +56,7 @@ const setNavbarOpen = () => {
 							href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdemos.creative-tim.com%2Fvue-notus%2F%23%2F"
 							target="_blank"
 						>
-							<i
-								class="fab fa-facebook leading-lg text-lg text-slate-400"
-							/>
+							<i class="fab fa-facebook leading-lg text-lg text-slate-400" />
 							<span class="ml-2 inline-block lg:hidden">Share</span>
 						</a>
 					</li>

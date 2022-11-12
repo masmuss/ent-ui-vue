@@ -47,9 +47,7 @@ const toggleCollapseShow = (classes) => {
 				v-bind:class="collapseShow"
 			>
 				<!-- Collapse header -->
-				<div
-					class="mb-4 block border-b border-solid border-slate-200 pb-4 md:hidden md:min-w-full"
-				>
+				<div class="mb-4 block border-b border-solid border-slate-200 pb-4 md:hidden md:min-w-full">
 					<div class="flex flex-wrap">
 						<div class="w-6/12">
 							<router-link
@@ -84,19 +82,14 @@ const toggleCollapseShow = (classes) => {
 				<!-- Divider -->
 				<hr class="my-4 md:min-w-full" />
 				<!-- Heading -->
-				<h6
-					class="block pt-1 pb-4 text-xs font-bold uppercase text-slate-500 no-underline md:min-w-full"
-				>
+				<h6 class="block pt-1 pb-4 text-xs font-bold uppercase text-slate-500 no-underline md:min-w-full">
 					Admin
 				</h6>
 				<!-- Navigation -->
 
 				<ul class="flex list-none flex-col md:min-w-full md:flex-col">
 					<li class="items-center">
-						<router-link
-							to="/admin/dashboard"
-							v-slot="{ href, navigate, isActive }"
-						>
+						<router-link to="/admin/dashboard" v-slot="{ href, navigate, isActive }">
 							<a
 								:href="href"
 								@click="navigate"
@@ -117,10 +110,7 @@ const toggleCollapseShow = (classes) => {
 					</li>
 
 					<li class="items-center">
-						<router-link
-							:to="{ name: 'setting' }"
-							v-slot="{ href, navigate, isActive }"
-						>
+						<router-link :to="{ name: 'setting' }" v-slot="{ href, navigate, isActive }">
 							<a
 								:href="href"
 								@click="navigate"
@@ -144,19 +134,14 @@ const toggleCollapseShow = (classes) => {
 				<!-- Divider -->
 				<hr class="my-4 md:min-w-full" />
 				<!-- Heading -->
-				<h6
-					class="block pt-1 pb-4 text-xs font-bold uppercase text-slate-500 no-underline md:min-w-full"
-				>
+				<h6 class="block pt-1 pb-4 text-xs font-bold uppercase text-slate-500 no-underline md:min-w-full">
 					Collections
 				</h6>
 				<!-- Navigation -->
 
 				<ul class="flex list-none flex-col md:mb-4 md:min-w-full md:flex-col">
 					<li class="items-center">
-						<router-link
-							:to="{ name: 'division' }"
-							v-slot="{ href, navigate, isActive }"
-						>
+						<router-link :to="{ name: 'division' }" v-slot="{ href, navigate, isActive }">
 							<a
 								:href="href"
 								@click="navigate"
@@ -178,10 +163,7 @@ const toggleCollapseShow = (classes) => {
 					</li>
 
 					<li class="items-center">
-						<router-link
-							:to="{ name: 'department' }"
-							v-slot="{ href, navigate, isActive }"
-						>
+						<router-link :to="{ name: 'department' }" v-slot="{ href, navigate, isActive }">
 							<a
 								:href="href"
 								@click="navigate"
@@ -203,10 +185,7 @@ const toggleCollapseShow = (classes) => {
 					</li>
 
 					<li class="items-center">
-						<router-link
-							:to="{ name: 'member' }"
-							v-slot="{ href, navigate, isActive }"
-						>
+						<router-link :to="{ name: 'member' }" v-slot="{ href, navigate, isActive }">
 							<a
 								:href="href"
 								@click="navigate"
@@ -232,9 +211,7 @@ const toggleCollapseShow = (classes) => {
 							class="block py-3 text-xs font-bold uppercase text-slate-700 hover:text-slate-500"
 							to="/auth/register"
 						>
-							<i
-								class="fas fa-clipboard-list mr-2 text-sm text-slate-300"
-							></i>
+							<i class="fas fa-clipboard-list mr-2 text-sm text-slate-300"></i>
 							Register
 						</router-link>
 					</li>

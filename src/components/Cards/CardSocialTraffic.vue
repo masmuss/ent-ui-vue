@@ -1,7 +1,5 @@
 <template>
-	<div
-		class="relative mb-6 flex w-full min-w-0 flex-col break-words rounded bg-white shadow-lg"
-	>
+	<div class="relative mb-6 flex w-full min-w-0 flex-col break-words rounded bg-white shadow-lg">
 		<div class="mb-0 rounded-t border-0 px-4 py-3">
 			<div class="flex flex-wrap items-center">
 				<div class="relative w-full max-w-full flex-1 flex-grow px-4">
@@ -44,20 +42,14 @@
 						>
 							Facebook
 						</th>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							1,480
 						</td>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							<div class="flex items-center">
 								<span class="mr-2">60%</span>
 								<div class="relative w-full">
-									<div
-										class="flex h-2 overflow-hidden rounded bg-red-200 text-xs"
-									>
+									<div class="flex h-2 overflow-hidden rounded bg-red-200 text-xs">
 										<div
 											style="width: 60%"
 											class="flex flex-col justify-center whitespace-nowrap bg-red-500 text-center text-white shadow-none"
@@ -73,20 +65,14 @@
 						>
 							Facebook
 						</th>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							5,480
 						</td>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							<div class="flex items-center">
 								<span class="mr-2">70%</span>
 								<div class="relative w-full">
-									<div
-										class="flex h-2 overflow-hidden rounded bg-emerald-200 text-xs"
-									>
+									<div class="flex h-2 overflow-hidden rounded bg-emerald-200 text-xs">
 										<div
 											style="width: 70%"
 											class="flex flex-col justify-center whitespace-nowrap bg-emerald-500 text-center text-white shadow-none"
@@ -102,20 +88,14 @@
 						>
 							Google
 						</th>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							4,807
 						</td>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							<div class="flex items-center">
 								<span class="mr-2">80%</span>
 								<div class="relative w-full">
-									<div
-										class="flex h-2 overflow-hidden rounded bg-purple-200 text-xs"
-									>
+									<div class="flex h-2 overflow-hidden rounded bg-purple-200 text-xs">
 										<div
 											style="width: 80%"
 											class="flex flex-col justify-center whitespace-nowrap bg-purple-500 text-center text-white shadow-none"
@@ -131,20 +111,14 @@
 						>
 							Instagram
 						</th>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							3,678
 						</td>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							<div class="flex items-center">
 								<span class="mr-2">75%</span>
 								<div class="relative w-full">
-									<div
-										class="bg-lightBlue-200 flex h-2 overflow-hidden rounded text-xs"
-									>
+									<div class="bg-lightBlue-200 flex h-2 overflow-hidden rounded text-xs">
 										<div
 											style="width: 75%"
 											class="bg-lightBlue-500 flex flex-col justify-center whitespace-nowrap text-center text-white shadow-none"
@@ -160,20 +134,14 @@
 						>
 							twitter
 						</th>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							2,645
 						</td>
-						<td
-							class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs"
-						>
+						<td class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 align-middle text-xs">
 							<div class="flex items-center">
 								<span class="mr-2">30%</span>
 								<div class="relative w-full">
-									<div
-										class="flex h-2 overflow-hidden rounded bg-orange-200 text-xs"
-									>
+									<div class="flex h-2 overflow-hidden rounded bg-orange-200 text-xs">
 										<div
 											style="width: 30%"
 											class="flex flex-col justify-center whitespace-nowrap bg-emerald-500 text-center text-white shadow-none"

@@ -38,9 +38,7 @@ defineProps({
 </script>
 
 <template>
-	<div
-		class="relative mb-6 flex min-w-0 flex-col break-words rounded bg-white shadow-lg xl:mb-0"
-	>
+	<div class="relative mb-6 flex min-w-0 flex-col break-words rounded bg-white shadow-lg xl:mb-0">
 		<div class="flex-auto p-4">
 			<div class="flex flex-wrap">
 				<div class="relative w-full max-w-full flex-1 flex-grow pr-4">
@@ -62,11 +60,7 @@ defineProps({
 			</div>
 			<p class="mt-4 text-sm text-slate-400">
 				<span class="mr-2" :class="[statPercentColor]">
-					<i
-						:class="[
-							statArrow === 'up' ? `fas fa-arrow-up` : `fas fa-arrow-down`,
-						]"
-					></i>
+					<i :class="[statArrow === 'up' ? `fas fa-arrow-up` : `fas fa-arrow-down`]"></i>
 					{{ statPercent }}%
 				</span>
 				<span class="whitespace-nowrap">{{ statDescripiron }}</span>
