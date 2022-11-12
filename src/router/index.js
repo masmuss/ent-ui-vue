@@ -17,13 +17,19 @@ import Logout from '../views/auth/Logout.vue'
 import Dashboard from '../views/admin/Dashboard.vue'
 import Profile from '../views/profile/Profile.vue'
 
+// division
 import Division from '../views/division/Division.vue'
 
+// department
 import Department from '../views/department/Department.vue'
 
+// member
 import Member from '../views/member/Member.vue'
 import Create from '../views/member/Create.vue'
 import Edit from '../views/member/Edit.vue'
+
+// finance
+import Finance from '../views/finance/Finance.vue'
 
 // const redirectToHomeOnLoggedIn = (to, from, next) => {
 // 	useAuthStore().token != null ? next({ name: 'dashboard' }) : next()
@@ -100,6 +106,11 @@ const routes = [
 				name: 'member.edit',
 				component: Edit,
 			},
+			{
+				path: '/finance',
+				name: 'finance',
+				component: Finance,
+			}
 		],
 	},
 	{ path: '/:pathMatch(.*)*', redirect: '/' },

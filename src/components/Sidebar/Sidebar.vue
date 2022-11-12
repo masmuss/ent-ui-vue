@@ -205,14 +205,36 @@ const toggleCollapseShow = (classes) => {
 							</a>
 						</router-link>
 					</li>
+				</ul>
 
+				<!-- Divider -->
+				<hr class="my-4 md:min-w-full" />
+				<!-- Heading -->
+				<h6 class="block pt-1 pb-4 text-xs font-bold uppercase text-slate-500 no-underline md:min-w-full">
+					Finance
+				</h6>
+				<!-- Navigation -->
+
+				<ul class="flex list-none flex-col md:mb-4 md:min-w-full md:flex-col">
 					<li class="items-center">
-						<router-link
-							class="block py-3 text-xs font-bold uppercase text-slate-700 hover:text-slate-500"
-							to="/auth/register"
-						>
-							<i class="fas fa-clipboard-list mr-2 text-sm text-slate-300"></i>
-							Register
+						<router-link :to="{ name: 'finance' }" v-slot="{ href, navigate, isActive }">
+							<a
+								:href="href"
+								@click="navigate"
+								class="block py-3 text-xs font-bold uppercase"
+								:class="[
+									isActive
+										? 'text-emerald-500 hover:text-emerald-600'
+										: 'text-slate-700 hover:text-slate-500',
+								]"
+							>
+								<i
+									:class="[isActive ? 'opacity-75' : 'text-slate-300']"
+									class="fas fa-wallet mr-2 text-sm text-slate-300"
+								></i>
+
+								Finance
+							</a>
 						</router-link>
 					</li>
 				</ul>
