@@ -31,6 +31,9 @@ import Edit from '../views/member/Edit.vue'
 // finance
 import Finance from '../views/finance/Finance.vue'
 
+// logs
+import Log from '../views/log/Log.vue'
+
 // const redirectToHomeOnLoggedIn = (to, from, next) => {
 // 	useAuthStore().token != null ? next({ name: 'dashboard' }) : next()
 // }
@@ -110,6 +113,11 @@ const routes = [
 				path: '/finance',
 				name: 'finance',
 				component: Finance,
+			},
+			{
+				path: '/logs',
+				name: 'logs',
+				component: Log,
 			}
 		],
 	},
