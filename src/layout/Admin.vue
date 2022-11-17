@@ -8,12 +8,12 @@ import FooterAdmin from '../components/Footer/FooterAdmin.vue'
 <template>
 	<div>
 		<Sidebar />
-		<div class="relative bg-slate-100 md:ml-64">
+		<div class="relative min-h-screen bg-slate-100 md:ml-64">
 			<AdminNavbar />
 			<HeaderStats />
 			<div class="-m-24 mx-auto w-full px-4 md:px-10">
 				<router-view />
-				<FooterAdmin />
+				<!-- <FooterAdmin /> -->
 			</div>
 		</div>
 	</div>

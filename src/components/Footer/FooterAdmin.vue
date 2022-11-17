@@ -5,7 +5,7 @@ let date = ref(new Date().getFullYear())
 </script>
 
 <template>
-	<footer class="block py-4">
+	<footer class="block py-4 fixed bottom-0 w-full">
 		<div class="container mx-auto px-4">
 			<hr class="border-b-1 mb-4 border-slate-200" />
 			<div class="flex flex-wrap items-center justify-center md:justify-between">

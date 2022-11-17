@@ -34,6 +34,9 @@ import Finance from '../views/finance/Finance.vue'
 // logs
 import Log from '../views/log/Log.vue'
 
+// mailing
+import Mailing from '../views/mailing/Mailing.vue'
+
 // const redirectToHomeOnLoggedIn = (to, from, next) => {
 // 	useAuthStore().token != null ? next({ name: 'dashboard' }) : next()
 // }
@@ -115,10 +118,30 @@ const routes = [
 				component: Finance,
 			},
 			{
+				path: '/mailing',
+				name: 'mailing',
+				component: Mailing,
+			},
+			{
+				path: '/mailing/create',
+				name: 'mailing.create',
+				component: () => import('../views/mailing/Create.vue'),
+			},
+			{
+				path: '/mailing/:id',
+				name: 'mailing.view',
+				component: () => import('../views/mailing/View.vue'),
+			},
+			{
+				path: '/mailing/edit/:id',
+				name: 'mailing.edit',
+				// component: Mailing,
+			},
+			{
 				path: '/logs',
 				name: 'logs',
 				component: Log,
-			}
+			},
 		],
 	},
 	{ path: '/:pathMatch(.*)*', redirect: '/' },

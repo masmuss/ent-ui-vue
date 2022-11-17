@@ -5,7 +5,7 @@ import axios from 'axios'
 export default {
 	setup() {
 		let logs = ref([])
-		let fields = ['Date', 'Status Code', 'URI', 'Duration', 'IP / User Agent', '']
+		let fields = ['Date', 'Status Code', 'Method','URI', 'Duration', 'IP / User Agent', '']
 
 		onMounted(() => {
 			getAll()
@@ -14,13 +14,8 @@ export default {
 		async function getAll() {
 			await axios
 				.get('/api/logs')
-				.then((result) => {
-					console.log(result.data)
-					logs.value = result.data
-				})
-				.catch((error) => {
-					console.log(error)
-				})
+				.then((result) => (logs.value = result.data))
+				.catch((error) => console.log(error))
 		}
 
 		return {
@@ -77,6 +72,19 @@ export default {
 										}"
 										>{{ log.status_code }}</span
 									>
+								</td>
+								<td
+									class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 text-left text-xs"
+								>
+									<span 
+										class="px-2 py-1 font-semibold rounded"
+										:class="{
+											'bg-blue-100 text-blue-800': log.method === 'GET',
+											'bg-green-100 text-green-800': log.method === 'POST',
+											'bg-yellow-100 text-yellow-800': log.method === 'PUT',
+											'bg-red-100 text-red-800': log.method === 'DELETE',
+										}"
+									>{{ log.method }}</span>
 								</td>
 								<th
 									class="whitespace-nowrap border-t-0 border-l-0 border-r-0 p-4 px-6 text-left text-xs"
